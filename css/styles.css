@@ -9,8 +9,19 @@ body{
     color: white;
 }
 
-header,footer{
-    background-color: tomato;
+.flex-container{
+display: flex;
+gap: 2%;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header,
+footer{
+    background-color: #115194;
     margin-bottom: 24px;
 }
 
@@ -19,18 +30,41 @@ h1{
 }
 
 nav{
-    background-color:yellowgreen;
+    background-color:#4bb19d;
     padding: 16px;
 }
 
 .banner{
-    background-color: black;
+    background-color: #b8bac3;
     padding: 288px 0;
     margin-bottom: 24px;
 }
 
 .promo{
-    background-color:lightseagreen;
+    background-color:#b0d892; 
     padding: 128px 0;
     margin-bottom: 24px;
+    width: 32%;
+   
 }
+
+@media screen and (min-width:1300px) {
+
+    .container{
+        width:1200px;
+        margin : 0 auto;
+    }
+}
+
+@media screen and (min-width:1800px) {
+
+    .container{
+        width:1700px;
+        
+    }
+}
+
+/* the three key for RWD :
+1) fluid container
+2)media queries
+3)flexble images */
